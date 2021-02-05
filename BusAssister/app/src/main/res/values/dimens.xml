@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="passenger_info_page_height_small"> 55dp </dimen>
+    <dimen name="passenger_info_page_height_normal"> 85dp </dimen>
+    <dimen name="passenger_info_page_height_large"> 125dp </dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

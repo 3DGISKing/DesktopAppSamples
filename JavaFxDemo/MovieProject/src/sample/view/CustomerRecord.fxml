@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CustomerRecordController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="120.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movie_icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="347.0" layoutY="635.0" mnemonicParsing="false" onAction="#quitApplication" stylesheets="@kiosk.css" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="124.0" mnemonicParsing="false" onAction="#showRentedAndRentingHistoryMovies" prefHeight="29.0" prefWidth="153.0" stylesheets="@kiosk.css" text="Select Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="rentedMovieTable" layoutX="121.0" layoutY="256.0" prefHeight="153.0" prefWidth="509.0" stylesheets="@kiosk.css">
+         <columns>
+            <TableColumn fx:id="movieTitleColRent" prefWidth="95.0" text="Title" />
+            <TableColumn fx:id="movieYearColRent" prefWidth="166.0" text="Year" />
+            <TableColumn fx:id="movieGenreColRent" prefWidth="121.0" text="Genre" />
+            <TableColumn fx:id="moviePriceColRent" prefWidth="132.0" text="Price" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <Label layoutX="143.0" layoutY="128.0" text="Customer Id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIDFeild" layoutX="255.0" layoutY="123.0" promptText="Enter Customer Id">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="customerIDLabel" layoutX="226.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerNameLabel" layoutX="342.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerBalanceLabel" layoutX="450.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="rentingHistoryTable" layoutX="118.0" layoutY="464.0" prefHeight="153.0" prefWidth="515.0" stylesheets="@kiosk.css">
+         <columns>
+            <TableColumn fx:id="movieTitleColHis" prefWidth="95.0" text="Title" />
+            <TableColumn fx:id="movieYearColHis" prefWidth="166.0" text="Year" />
+            <TableColumn fx:id="movieGenreColHis" prefWidth="121.0" text="Genre" />
+            <TableColumn fx:id="moviePriceColHis" prefWidth="132.0" text="Price" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <Label layoutX="122.0" layoutY="54.0" style="-fx-text-fill: #dd4814;" text="Customer Record" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="203.0" style="-fx-text-fill: #dd4814;" text="Rented Movies" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="428.0" style="-fx-text-fill: #dd4814;" text="Renting History" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="custRecordErrorMsgLabel" layoutX="242.0" layoutY="167.0" prefHeight="20.0" prefWidth="333.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/passengers_on_boarded_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#92d050"
+            android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:id="@+id/passengers_on_boarded"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No of Passengers on-boarded"
+                        android:textSize="16dp"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/on_board_passengers_no"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="number"
+                        android:textSize="32dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/passenger_changed_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundshpreportchange"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/changed_on_board_passengers_tittle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No of Passengers changed pickup point"
+                            android:textSize="16dp"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/changed_on_board_passengers_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="number"
+                            android:textColor="#000000"
+                            android:textSize="32dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/no_onboard_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundshpreportfailed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/failed_on_board_passengers_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="No of Passengers didn't onboard"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/failed_on_board_passengers_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="number"
+                    android:textColor="#000000"
+                    android:textSize="32dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/passenger_cannelled_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundshpreportcancelled"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cancelled_passengers_tittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No of Passengers cancelled"
+                        android:textSize="16dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/cancelled_passengers_no"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="number"
+                        android:textSize="32dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/roundshapebtn1"
+        android:text="HOME"
+        android:textColor="#FFFF00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.RemoveCustomerController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="120.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movie_icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="345.0" layoutY="417.0" mnemonicParsing="false" onAction="#quitApplication" stylesheets="@kiosk.css" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="299.0" layoutY="365.0" mnemonicParsing="false" onAction="#removeCustomerFromTable" stylesheets="@kiosk.css" text="Remove Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="removeCustomerTable" layoutX="24.0" layoutY="138.0" prefHeight="213.0" prefWidth="711.0" stylesheets="@kiosk.css">
+        <columns>
+          <TableColumn fx:id="customerIDCol" prefWidth="95.0" text="Id" />
+          <TableColumn fx:id="customerNameCol" prefWidth="166.0" text="Name" />
+            <TableColumn fx:id="customerBalanceCol" prefWidth="121.0" text="Balance" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <Label layoutX="122.0" layoutY="54.0" style="-fx-text-fill: #dd4814;" text="Remove Customer" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

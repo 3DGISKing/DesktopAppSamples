@@ -1,0 +1,59 @@
+.button {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 15px;
+    -fx-text-fill:white;
+    -fx-background-color: #4d4b44;
+}
+.button:hover {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 15px;
+    -fx-text-fill:white;
+    -fx-background-color: #f07746;
+}
+.largeButton {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 28px;
+    -fx-background-color:white;
+    -fx-text-fill: #4d4b44;
+    -fx-border-color: #dedede;
+}
+.largeButton:hover {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 28px;
+    -fx-background-color:#f07746;
+    -fx-text-fill: white;
+    -fx-border-color: #dedede;
+}
+.menuButton {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 15px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #dedede;
+}
+.menuButton :hover{
+    -fx-font-size: 15px;
+    -fx-font-family: "Verdana";
+    -fx-background-color: #f07746;
+    -fx-text-fill: white;
+     -fx-border-color: #dedede;
+}
+.table-view{
+    -fx-border-color: #f07746;
+}
+.table-row-cell:selected {
+    -fx-background-color: #f07746;
+    -fx-text-fill: white;
+}
+.list-view{
+    -fx-border-color: #f07746;
+}
+.list-cell:selected {
+    -fx-background-color: #f07746;
+    -fx-text-fill: white;
+}
+
+*:focused {
+    -fx-focus-color: #f07746;
+}
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="com.dev.irsg.fooddeliverysystem.customerui.FoodActivity"-->
+    <!--tools:showIn="@layout/activity_order">-->
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/selected_food_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="80sp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/pay_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Pay"-->
+        <!--android:layout_below="@+id/total_price_textview"-->
+        <!--android:layout_alignLeft="@+id/total_price_textview"-->
+        <!--android:layout_alignStart="@+id/total_price_textview"-->
+        <!--android:layout_marginTop="13dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/total_price_textview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TextView"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginBottom="45dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <ListView
+            android:id="@+id/selected_food_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+     </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_price_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="time"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="location"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="phone"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="5sp"
+                android:id="@+id/pay_button"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#2E7D32"
+                android:text="Pay"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="10sp"
+                android:id="@+id/cancel_button"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#2E7D32"
+                android:text="Cancel"
+                android:textColor="#ffffff" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

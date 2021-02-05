@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_prompt">Choose a service</string>
+    <string-array name="service_list">
+        <item>Select Service No</item>
+        <item>HYD 12</item>
+        <item>HYD 13</item>
+    </string-array>
+</resources>

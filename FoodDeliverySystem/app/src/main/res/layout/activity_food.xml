@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+   <ImageView
+        android:layout_marginBottom="10sp"
+        android:id="@+id/food_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="166sp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/common_full_open_on_phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@android:color/holo_green_dark"
+        android:paddingLeft="10sp"
+        android:text="Price"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
+        android:ems="10"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/food_imageview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/food_description_textView"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Options"
+        android:textAlignment="center"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
+        android:textSize="20sp"
+        android:layout_below="@+id/food_description_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="124sp"
+        android:layout_weight="1.08"
+        android:orientation="vertical"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/option1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_marginLeft="20sp"
+                android:layout_width="0sp"
+                android:id="@+id/option1_description"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Option1" />
+
+            <TextView
+                android:id="@+id/food_option_price1"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Option1" />
+
+            <Switch
+                android:layout_width="0sp"
+                android:id="@+id/food_option_switch1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/option2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_marginLeft="20sp"
+                android:layout_width="0sp"
+                android:layout_weight="3"
+                android:id="@+id/option2_description"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Option2" />
+
+            <TextView
+                android:id="@+id/food_option_price2"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Option2" />
+
+
+            <Switch
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:id="@+id/food_option_switch2"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/basket_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="00sp"
+        android:background="#2E7D32"
+        android:textColor="#ffffff"
+        android:text="Add To Basket"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ShowMoviesByGenreController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="120.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movie_icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="367.0" layoutY="422.0" mnemonicParsing="false" onAction="#quitApplication" stylesheets="@kiosk.css" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="genreDisplayMovieTable" layoutX="258.0" layoutY="182.0" prefHeight="229.0" prefWidth="456.0" stylesheets="@kiosk.css">
+         <columns>
+            <TableColumn fx:id="movieTitleCol" prefWidth="95.0" text="Title" />
+            <TableColumn fx:id="movieYearCol" prefWidth="107.0" text="Year" />
+            <TableColumn fx:id="movieGenreCol" prefWidth="121.0" text="Genre" />
+            <TableColumn fx:id="moviePriceCol" prefWidth="130.0" text="Price" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+      <ListView fx:id="genreListView" layoutX="35.0" layoutY="182.0" prefHeight="229.0" prefWidth="200.0" stylesheets="@kiosk.css">
+         <styleClass>
+            <String fx:value="list-view" />
+            <String fx:value="list-cell" />
+         </styleClass></ListView>
+      <Button layoutX="35.0" layoutY="422.0" mnemonicParsing="false" onAction="#displayGenreMovies" prefHeight="31.0" prefWidth="200.0" stylesheets="@kiosk.css" text="Display Movies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="123.0" layoutY="54.0" style="-fx-text-fill: #dd4814;" text="Movies By Genre" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="145.0" style="-fx-text-fill: #dd4814;" text="Genre" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="145.0" style="-fx-text-fill: #dd4814;" text="Movies" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

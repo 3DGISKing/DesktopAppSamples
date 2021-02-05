@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Passenger on-board off-board service"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/service_spinner"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshpedittext"
+            android:entries="@array/service_list"
+            android:inputType="text"
+            android:text="000000"
+            android:textColorHint="#c0c0c0"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_spinner_img"
+            android:layout_alignTop="@+id/service_spinner"
+            android:layout_alignRight="@+id/service_spinner"
+            android:layout_alignEnd="@+id/service_spinner" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/conform_button"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshapebtn"
+            android:text="Confirm"
+            android:textColor="#FBE300"
+            android:textColorLink="@android:color/holo_orange_light" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/origination_textview"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshpedittext"
+            android:text="Origination"
+            android:textColor="#6c6c6c6c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_below="@+id/origination_textview"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshpedittext"
+            android:text="Destination"
+            android:id="@+id/destination_textview"
+            android:textColor="#6c6c6c6c"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <Button
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/clear_button"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshapebtn"
+            android:text="Clear"
+            android:textColor="#FBE300" />
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/start_journey_button"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundshapebtn"
+            android:text="Start Journey"
+            android:textColor="#FBE300" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="11dp"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="Copy rights 2017"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

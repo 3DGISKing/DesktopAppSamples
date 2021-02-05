@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CatalogueController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="120.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movie_icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="361.0" layoutY="439.0" mnemonicParsing="false" onAction="#quitApplication" stylesheets="@kiosk.css" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="customerIDLabel" layoutX="226.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerNameLabel" layoutX="342.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerBalanceLabel" layoutX="450.0" layoutY="166.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="227.0" mnemonicParsing="false" onAction="#openAllMoviesPage" prefHeight="31.0" prefWidth="149.0" styleClass="menuButton" stylesheets="@kiosk.css" text="All Movies">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="266.0" mnemonicParsing="false" onAction="#openAvailableMoviesPage" prefHeight="31.0" prefWidth="149.0" styleClass="menuButton" stylesheets="@kiosk.css" text="Available Movies">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="309.0" mnemonicParsing="false" onAction="#openMovieByGenrePage" prefHeight="31.0" prefWidth="149.0" styleClass="menuButton" stylesheets="@kiosk.css" text="Movies By Genre">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onAction="#opennMoviesByYearPage" prefHeight="31.0" prefWidth="149.0" styleClass="menuButton" stylesheets="@kiosk.css" text="Movies By year">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="203.0" layoutY="227.0" mnemonicParsing="false" onAction="#openRentAMoviePage" prefHeight="152.0" prefWidth="175.0" styleClass="largeButton" stylesheets="@kiosk.css" text="Rent a Movie" wrapText="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="402.0" layoutY="227.0" mnemonicParsing="false" onAction="#openReturnAMoviePage" prefHeight="152.0" prefWidth="175.0" styleClass="largeButton" stylesheets="@kiosk.css" text="Return a Movie" wrapText="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Label layoutX="123.0" layoutY="54.0" style="-fx-text-fill: #dd4814;" text="Catalogue" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="195.0" style="-fx-text-fill: #dd4814;" text="View Movies" textAlignment="CENTER" textFill="#ee6d39">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

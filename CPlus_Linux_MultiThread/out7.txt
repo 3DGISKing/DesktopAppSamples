@@ -1,0 +1,45 @@
+User 1 from Group 1 arrives to the DBMS
+User 1 is acessing the position 10 of the DBMS for 1 second(s)
+User 1 finished its execution
+User 2 from Group 1 arrives to the DBMS
+User 2 is acessing the position 10 of the DBMS for 1 second(s)
+User 3 from Group 1 arrives to the DBMS
+User 3 is acessing the position 9 of the DBMS for 2 second(s)
+User 2 finished its execution
+User 4 from Group 1 arrives to the DBMS
+User 4 is waiting: position 9 of the database is being used by 3
+User 3 finished its execution
+User 4 is acessing the position 9 of the DBMS for 2 second(s)
+User 4 finished its execution
+User 5 from Group 2 arrives to the DBMS
+User 5 is waiting due to its group
+User 6 from Group 2 arrives to the DBMS
+User 6 is waiting due to its group
+User 7 from Group 1 arrives to the DBMS
+User 7 is acessing the position 2 of the DBMS for 5 second(s)
+User 8 from Group 2 arrives to the DBMS
+User 8 is waiting due to its group
+User 9 from Group 1 arrives to the DBMS
+User 9 is waiting: position 2 of the database is being used by 7
+User 7 finished its execution
+User 9 is acessing the position 2 of the DBMS for 2 second(s)
+User 9 finished its execution
+
+All users from Group 1 finished their execution
+The users from Group 2 start their execution
+
+User 5 is acessing the position 1 of the DBMS for 3 second(s)
+User 6 is waiting: position 1 of the database is being used by 5
+User 8 is acessing the position 3 of the DBMS for 4 second(s)
+User 5 finished its execution
+User 6 is acessing the position 1 of the DBMS for 3 second(s)
+User 8 finished its execution
+User 6 finished its execution
+
+Total Requests: 
+	Group 1: 6
+	Group 2: 3
+
+ Requests that waited:
+	Due to its group: 3
+	Due to a locked position: 3

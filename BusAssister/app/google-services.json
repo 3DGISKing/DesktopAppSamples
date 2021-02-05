@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "712315698423",
+    "firebase_url": "https://busassister-c5790.firebaseio.com",
+    "project_id": "busassister-c5790",
+    "storage_bucket": "busassister-c5790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712315698423:android:a9e3549ca2de871f",
+        "android_client_info": {
+          "package_name": "com.dev.irsg.busassister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712315698423-3k8ms3qteqv7odgtkbf8jlm4ckqp1hh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_7RNH-w5MjfrgBvCkR_ZewA_jVak0p4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

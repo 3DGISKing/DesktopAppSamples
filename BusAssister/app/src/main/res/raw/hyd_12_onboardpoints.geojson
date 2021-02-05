@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Boarding Point": "Ashok Nagar", "Time": "21:40:00", "Lattitude": 17.406283, "Longitude": 78.489987, "Order": 1 }, "geometry": { "type": "Point", "coordinates": [ 78.489987, 17.406283 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Chandanagar", "Time": "21:45:00", "Lattitude": 17.493601, "Longitude": 78.325254, "Order": 2 }, "geometry": { "type": "Point", "coordinates": [ 78.325254, 17.493601 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Madinaguda", "Time": "21:50:00", "Lattitude": 17.493686, "Longitude": 78.340129, "Order": 3 }, "geometry": { "type": "Point", "coordinates": [ 78.340129, 17.493686 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Miyapur", "Time": "22:00:00", "Lattitude": 17.512511, "Longitude": 78.352228, "Order": 4 }, "geometry": { "type": "Point", "coordinates": [ 78.352228, 17.512511 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Nizampet", "Time": "22:05:00", "Lattitude": 17.516481, "Longitude": 78.376628, "Order": 5 }, "geometry": { "type": "Point", "coordinates": [ 78.376628, 17.516481 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "K.P.H.B", "Time": "22:15:00", "Lattitude": 17.496121, "Longitude": 78.397214, "Order": 6 }, "geometry": { "type": "Point", "coordinates": [ 78.397214, 17.496121 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "KUKATPALLY", "Time": "22:20:00", "Lattitude": 17.491925, "Longitude": 78.406591, "Order": 7 }, "geometry": { "type": "Point", "coordinates": [ 78.406591, 17.491925 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Moosapet", "Time": "22:20:00", "Lattitude": 17.470005, "Longitude": 78.427794, "Order": 8 }, "geometry": { "type": "Point", "coordinates": [ 78.427794, 17.470005 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Bharat Nagar", "Time": "22:25:00", "Lattitude": 17.465707, "Longitude": 78.430111, "Order": 9 }, "geometry": { "type": "Point", "coordinates": [ 78.430111, 17.465707 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "ESI", "Time": "22:30:00", "Lattitude": 17.447428, "Longitude": 78.43878, "Order": 10 }, "geometry": { "type": "Point", "coordinates": [ 78.43878, 17.447428 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "S.R Nagar", "Time": "22:35:00", "Lattitude": 17.443109, "Longitude": 78.44114, "Order": 11 }, "geometry": { "type": "Point", "coordinates": [ 78.44114, 17.443109 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Ameerpet", "Time": "22:40:00", "Lattitude": 17.434408, "Longitude": 78.445754, "Order": 12 }, "geometry": { "type": "Point", "coordinates": [ 78.445754, 17.434408 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Punjagutta", "Time": "22:45:00", "Lattitude": 17.420651, "Longitude": 78.456547, "Order": 13 }, "geometry": { "type": "Point", "coordinates": [ 78.456547, 17.420651 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Lakdi-ka-pool", "Time": "22:50:00", "Lattitude": 17.403104, "Longitude": 78.467276, "Order": 14 }, "geometry": { "type": "Point", "coordinates": [ 78.467276, 17.403104 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Nampally", "Time": "22:55:00", "Lattitude": 17.386041, "Longitude": 78.466594, "Order": 15 }, "geometry": { "type": "Point", "coordinates": [ 78.466594, 17.386041 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Koti", "Time": "23:00:00", "Lattitude": 17.385758, "Longitude": 78.4795, "Order": 16 }, "geometry": { "type": "Point", "coordinates": [ 78.4795, 17.385758 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Dilsukhnagar", "Time": "23:15:00", "Lattitude": 17.368783, "Longitude": 78.524671, "Order": 17 }, "geometry": { "type": "Point", "coordinates": [ 78.524671, 17.368783 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Kothapet", "Time": "23:20:00", "Lattitude": 17.373019, "Longitude": 78.547636, "Order": 18 }, "geometry": { "type": "Point", "coordinates": [ 78.547636, 17.373019 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "L.B Nagar", "Time": "23:30:00", "Lattitude": 17.345718, "Longitude": 78.55223, "Order": 19 }, "geometry": { "type": "Point", "coordinates": [ 78.55223, 17.345718 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "Vanasthalipuram", "Time": "23:35:00", "Lattitude": 17.328644, "Longitude": 78.575301, "Order": 20 }, "geometry": { "type": "Point", "coordinates": [ 78.575301, 17.328644 ] } },
+{ "type": "Feature", "properties": { "Boarding Point": "End", "Time": null, "Lattitude": null, "Longitude": null, "Order": 21 }, "geometry": { "type": "Point", "coordinates": [ 78.591982450324934, 17.308450204760135 ] } }
+]
+}
