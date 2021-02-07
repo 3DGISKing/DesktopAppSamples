@@ -54,9 +54,9 @@ requests from a file using I/O redirection.
 representing the request from process 1, 2, and 3
 respectively.
 
-**3 4** // Process 1 sending to process 3 the integer value 4
-**1 5** // Process 2 sending to process 1 the integer value 5
-**2 7** // Process 3 sending to process 2 the integer value 7
+**3 4** // Process 1 sending to process 3 the integer value 4  
+**1 5** // Process 2 sending to process 1 the integer value 5  
+**2 7** // Process 3 sending to process 2 the integer value 7  
 
 • The first value of each line represents the id of the
 process which the current process wants to contact.
@@ -258,7 +258,5 @@ Child 3
 Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1
 Code: -1 1 -1 1
 Received value = 4
-
-# Demo
 
 [![](http://img.youtube.com/vi/INYzzTdFmKo/0.jpg)](http://www.youtube.com/watch?v=INYzzTdFmKo "")
