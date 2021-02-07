@@ -1,3 +1,5 @@
+[Detailed Job Description](https://github.com/3DGISKing/DesktopAppSamples/blob/master/QtSocketWalshCodeSample/project%20description.pdf)
+
 This project was done as milestone10 of following project in Freelancer.com.
 
 [https://www.freelancer.com/projects/linux/Matrix-Multiplication/?w=f](https://www.freelancer.com/projects/linux/Matrix-Multiplication/?w=f)
@@ -240,23 +242,23 @@ Here is the message from child 3: Value = 7, Destination = 2
 
 **Sender / Receiver program:**
 
-Child 1, sending value: 4 to child process 3
-Child 2, sending value: 5 to child process 1
-Child 3, sending value: 7 to child process 2
+Child 1, sending value: 4 to child process 3  
+Child 2, sending value: 5 to child process 1  
+Child 3, sending value: 7 to child process 2  
 
-Child 1
-Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1
-Code: -1 -1 1 1
-Received value = 5
+Child 1  
+Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1  
+Code: -1 -1 1 1  
+Received value = 5  
 
-Child 2
-Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1
-Code: -1 1 1 -1
-Received value = 7
+Child 2  
+Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1  
+Code: -1 1 1 -1  
+Received value = 7  
 
-Child 3
-Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1
-Code: -1 1 -1 1
-Received value = 4
+Child 3  
+Signal:-3 1 1 1 1 1 1 -3 -1 -1 3 -1  
+Code: -1 1 -1 1  
+Received value = 4  
 
 [![](http://img.youtube.com/vi/INYzzTdFmKo/0.jpg)](http://www.youtube.com/watch?v=INYzzTdFmKo "")
